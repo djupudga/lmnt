@@ -1,0 +1,24 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "Example use of LMent",
+  "main": "index.js",
+  "scripts": {
+    "esbuild:bundle": "esbuild --bundle --outfile=public/app.js ./src/index.ts",
+    "bundle": "npm run type:check && npm run esbuild:bundle",
+    "clean": "rm public/app.js && rm -rf coverage",
+    "format": "prettier -w src/* src/**/* test/**/* test/*",
+    "serve": "serve ./public",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "type:check": "tsc --noEmit",
+    "watch": "tsc -w"
+  },
+  "author": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "esbuild": "^0.16.12",
+    "lment": "file:../lment",
+    "serve": "^14.1.2",
+    "typescript": "^4.9.4"
+  }
+}

@@ -3,10 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-  },
+  "scripts": {},
   "workspaces": [
-    "packages/lment"
+    "packages/lment",
+    "packages/example",
+    "packages/std"
   ],
   "author": "",
   "license": "UNLICENCED"

@@ -4,3 +4,4 @@ lib
 dist
 coverage
 public/app.js
+/nbproject/private/
